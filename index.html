@@ -4,19 +4,173 @@
     <header>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="Sviluppo di una pagina web - Blog Epicode"
+        content=" Primi passi operativi per creare un modello di pagina HTML per un post.
+      Scopri come iniziare in modo facile"
+      />
+      <style>
+        .info {
+          color: palevioletred;
+        }
+      </style>
       <title>articolo 1</title>
-      <img src="assets/img/logo.svg" alt="logo sito" />
-      <h1>Sviluppo di una pagina web - Blog Epicode</h1>
-      <h3>
-        Primi passi operativi per creare un modello di pagina HTML per un post.
-        Scopri come iniziare in modo facile
-      </h3>
+      <div>
+        <img src="assets/img/logo.svg" alt="logo sito" />
+        <h1>Epicode - il blog dei developers</h1>
+      </div>
+      <label for="menu">Seleziona un opzione dal menu</label>
+      <div>
+        <select name="menu" id="menu">
+          <option value="articolo1">Home</option>
+          <option value="articolo2">articoli</option>
+          <option value="articolo3">Lavora con noi</option>
+        </select>
+      </div>
     </header>
   </head>
   <body>
     <main>
-      
+      <h3>Come creare un template per i post</h3>
+      <h4>di Mario Rossi - pubblicato il 25-10-2020</h4>
+      <p>
+        La prima cosa da fare è suddividere in blocchi logici la pagina,
+        identificando le parti comunida applicare a tutte le pagine. Le varie
+        aree saranno quindi suddivise in:
+      </p>
+      <ul>
+        <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+        <li>
+          Contenuti centrali variabili del tag &lt;main&gt;(corpo principale)
+        </li>
+        <li>
+          Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;
+        </li>
+      </ul>
+      <p>Formattazione del codice</p>
+      <p>
+        Il testo dell'articolo dovrà essere formattato per identificare le parti
+        da selezionare in CSS. Perciò i passi saranno:
+      </p>
+      <ol>
+        <li>
+          Progettare il markup assegnando ogni specifico testo il tag
+          appropriato
+        </li>
+        <li>
+          Scrivere l' HTML dai tag esterni a quelli interni e dall' alto verso
+          il basso
+        </li>
+        <li>Applicare gli stili CSS</li>
+      </ol>
+      <p>
+        L' applicazione di stili CSS è cresciuta negli anni fino a raggiingere
+        la diffusione pressocché totale.
+      </p>
+      <label for="dati">Diffusione del CSS</label>
+      <table id="dati" border="1px">
+        <tr>
+          <th>Anno</th>
+          <th>% di utilizzo</th>
+          <th>Supporto del browser</th>
+        </tr>
+        <tr>
+          <td>2000</td>
+          <td>20%</td>
+          <td>17%</td>
+        </tr>
+        <tr>
+          <td>2002</td>
+          <td>35%</td>
+          <td>22%</td>
+        </tr>
+        <tr>
+          <td>2004</td>
+          <td>45%</td>
+          <td>42%</td>
+        </tr>
+        <tr>
+          <td>2008</td>
+          <td>80%</td>
+          <td>51%</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>100%</td>
+          <td>76%</td>
+        </tr>
+      </table>
+      <p>
+        Un test di valutazione potrà essere fatto tramite il tool online
+        <a href="https://www.google.it" target="_blank">link esterno</a>
+        dedicato a tale scopo. Una volta ottimizzato il tutto, avremo raggiunto
+        il nostro obiettivo ed essere stati dei veri developers come loro:
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/TxcJ2drr554?si=3xUa-Ga8XgYhud2q"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <p>
+        Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra
+        newsletter:
+      </p>
+      <form action="#" onsubmit="alert('dati inviati con successo')">
+        <input
+          type="text"
+          id="name"
+          name="nome"
+          placeholder="inserisci il tuo nome"
+          required
+        />
+        <input
+          type="text"
+          id="surname"
+          name="cognome"
+          placeholder="inserisci il tuo cognome"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          placeholder="inserisci la tua email"
+          required
+        />
+        <p>accetti le condizioni di utilizzo</p>
+        <label for="scelta">si</label>
+        <input type="checkbox" id="scelta" />
+        <label for="scelta">no</label>
+        <input type="checkbox" id="scelta" />
+        <div>
+          <input type="submit" id="#" name="invia" />
+        </div>
+      </form>
     </main>
   </body>
-  <footer></footer>
+  <footer>
+    <div>
+      <label class="info">(area correlati)</label>
+      <p>
+        Articoli correlati <br />
+        Validare il codice HTML <br />
+        Categoria: Develop <br />
+        Data: 16-9-2020 <br />
+      </p>
+      <p>
+        Correggere la sintassi <br />
+        Categoria: develop <br />
+        Data: 16-9-2020
+      </p>
+      <label class="info">(fine area correlati)</label>
+    </div>
+    <br />
+    <div>
+      <label class="info">(Copyright e info)</label>
+      <h5>Blog Epicode 2023</h5>
+    </div>
+  </footer>
 </html>
